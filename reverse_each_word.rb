@@ -5,11 +5,18 @@
 #convert it back to a string
 
 
+#def reverse_each_word(string)
+#  reversed_string = []
+#  array = string.split(" ")
+#  array.each do |word|
+#     reversed_string << word.reverse
+#   end
+#     reversed_string.join (" ")
+# end
+
 def reverse_each_word(string)
-  reversed_string = []
   array = string.split(" ")
-  array.each do |word|
-     reversed_string << word.reverse
+  array.each  {|word| << word.reverse}
    end
-     reversed_string.join (" ")
+     array.join (" ")
 end
